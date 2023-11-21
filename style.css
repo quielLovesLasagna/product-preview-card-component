@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	background-color: hsl(30, 38%, 92%);
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	max-width: 680px;
+	background-color: hsl(0, 0%, 100%);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.product-image {
+	width: 100%;
+	display: block;
+}
+
+.product-description-container {
+	padding: 35px;
+}
+
+.tag {
+	font-family: "Montserrat", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: hsl(228, 12%, 48%);
+	margin-bottom: 30px;
+}
+
+.product-name {
+	font-family: "Fraunces", serif;
+	line-height: 1;
+	font-size: 36px;
+	color: hsl(212, 21%, 14%);
+	margin-bottom: 30px;
+}
+
+.product-description {
+	font-family: "Montserrat", sans-serif;
+	color: hsl(228, 12%, 48%);
+	line-height: 1.6;
+	margin-bottom: 30px;
+}
+
+.price-container {
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.price {
+	margin-right: 20px;
+	font-family: "Fraunces", serif;
+	font-size: 36px;
+	color: hsl(158, 36%, 37%);
+}
+
+.old-price {
+	font-family: "Montserrat", sans-serif;
+	color: hsl(228, 12%, 48%);
+}
+
+.btn-add-to-cart {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background-color: hsl(158, 36%, 37%);
+	color: #fff;
+	width: 100%;
+	padding: 18px;
+	border-radius: 10px;
+	font-size: 14px;
+	font-weight: 700;
+	font-family: "Montserrat", sans-serif;
+	transition: all 0.3s ease;
+}
+
+.cart-icon {
+	margin-right: 10px;
+}
+
+/* Hover state */
+.btn-add-to-cart:hover {
+	background-color: hsl(158, 37%, 19%);
+}
+
+/* Media query: below 690px */
+@media (max-width: 690px) {
+	.container {
+		grid-template-columns: 1fr;
+		max-width: 400px;
+	}
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
